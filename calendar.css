@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    font-size: 80px;
+}
+
+.container {
+    width: 60%;
+}
+
+#months:hover {
+    color: royalblue
+}
+
+#years:hover {
+    color: royalblue
+}
+
+.btn {
+    margin-top: 8px;
+}
