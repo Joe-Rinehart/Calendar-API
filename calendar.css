@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Sacred Bridge;
+    src: url(./Fonts/Sacred\ Bridge\ Demo.ttf);
+}
+
 .title {
     text-align: center;
     font-size: 80px;
+    font-family: Sacred Bridge;
 }
 
 .container {
@@ -17,4 +23,13 @@
 
 .btn {
     margin-top: 8px;
+}
+
+.container-list {
+    margin-left: 5%;
+}
+
+#list-items {
+    margin-top: 50px;
+    line-height: 30px;
 }
