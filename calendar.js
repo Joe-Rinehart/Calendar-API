@@ -12,7 +12,13 @@ function getHoliday(month, year) {
 }
 
 function displayData(holidays) {
-    holidays.forEach(holiday => {
+    const uniqueHolidays = holidays.filter((holiday, index) => {
+        return index === holidays.findIndex(obj => {
+          return obj.name === holiday.name;
+        });
+      });
+
+    uniqueHolidays.forEach(holiday => {
         let li = document.createElement("li");
         li.innerText = `${holiday.date.iso} - ${holiday.name} - ${holiday.description}`;
         listItem.appendChild(li)
@@ -31,3 +37,10 @@ function handleClick() {
 
     getHoliday(month, year)
 }
+
+
+
+
+
+
+
